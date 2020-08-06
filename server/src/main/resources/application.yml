@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: multiform-scheduler
+
+server:
+  port: 8888
+
+#调度配置
+scheduler:
+  self:
+    adaption:
+      timeout: 2000
+  retry:
+    maxRetryMillis: 3000
+  grad:
+    retry:
+      retryTimes: 1000,10000,30000
